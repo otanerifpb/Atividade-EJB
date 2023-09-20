@@ -13,11 +13,11 @@ public class MensagemService {
 
     public void inserir(long id, String texto) {
         Mensagem novaMensagem = new Mensagem(id, texto);
-        this.mensagemDAO.inserir(novaMensagem);
+        mensagemDAO.inserir(novaMensagem);
     }
 
     public List<Mensagem> listar() {
-        return this.mensagemDAO.listar();
+        return mensagemDAO.listar();
     }
 
     public Mensagem pesquisarPorId(Long id) {
